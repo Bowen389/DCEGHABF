@@ -1,6 +1,5 @@
 {
   "source": "exchange_calendars XSHG",
-  "package_version": "4.13.3",
   "valid_from": "2023-01-03",
   "valid_through": "2026-12-31",
   "sessions": [
