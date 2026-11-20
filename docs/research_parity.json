@@ -1,0 +1,130 @@
+{
+  "asof": "2026-11-18",
+  "raw_factor_checks": [
+    {
+      "pool": "breakout",
+      "rows": 40,
+      "factor_errors": {
+        "信号前5日均额对数": 3.552713678800501e-15,
+        "量能加速度": 0.0,
+        "信号日实体占振幅比": 0.0,
+        "5日动量": 0.0,
+        "20日相对动量": 0.0,
+        "估算流通市值": 0.0,
+        "量价效率": 0.0,
+        "收盘位置": 0.0,
+        "信号前3日动量": 0.0,
+        "20日波动率": 1.491862189340054e-16,
+        "5日累计换手": 1.4210854715202004e-14,
+        "连板": 0.0,
+        "信号前20日涨停次数": 0.0,
+        "量比60": 0.0,
+        "突破幅度20": 0.0,
+        "OBV斜率": 0.0,
+        "信号前一日涨跌幅": 0.0,
+        "信号前20日高点距离": 0.0,
+        "量比5": 0.0,
+        "VWAP乖离": 0.0,
+        "开盘强度": 0.0,
+        "波动压缩": 3.175237850427948e-14,
+        "上影比例": 0.0,
+        "振幅": 0.0,
+        "逆市强度": 0.0
+      }
+    },
+    {
+      "pool": "shrink",
+      "rows": 6,
+      "factor_errors": {
+        "信号前5日均额对数": 0.0,
+        "收盘位置": 0.0,
+        "20日相对动量": 0.0,
+        "信号前一日涨跌幅": 0.0
+      }
+    },
+    {
+      "pool": "rebound",
+      "rows": 3,
+      "factor_errors": {
+        "信号前一日涨跌幅": 0.0,
+        "信号日实体占振幅比": 0.0,
+        "量比60": 0.0,
+        "量比5": 0.0,
+        "OBV斜率": 0.0
+      }
+    }
+  ],
+  "module_score_checks": [
+    {
+      "regime": "Q1",
+      "module": "G",
+      "qualified_count": 2
+    },
+    {
+      "regime": "Q1",
+      "module": "A",
+      "qualified_count": 2
+    },
+    {
+      "regime": "Q1",
+      "module": "B",
+      "qualified_count": 8
+    },
+    {
+      "regime": "Q2",
+      "module": "D",
+      "qualified_count": 1
+    },
+    {
+      "regime": "Q2",
+      "module": "C",
+      "qualified_count": 8
+    },
+    {
+      "regime": "Q2",
+      "module": "A",
+      "qualified_count": 2
+    },
+    {
+      "regime": "Q2",
+      "module": "B",
+      "qualified_count": 8
+    },
+    {
+      "regime": "Q3",
+      "module": "E",
+      "qualified_count": 1
+    },
+    {
+      "regime": "Q3",
+      "module": "A",
+      "qualified_count": 2
+    },
+    {
+      "regime": "Q3",
+      "module": "B",
+      "qualified_count": 8
+    },
+    {
+      "regime": "Q3",
+      "module": "F",
+      "qualified_count": 2
+    },
+    {
+      "regime": "Q4",
+      "module": "H",
+      "qualified_count": 1
+    },
+    {
+      "regime": "Q4",
+      "module": "A",
+      "qualified_count": 2
+    },
+    {
+      "regime": "Q4",
+      "module": "B",
+      "qualified_count": 8
+    }
+  ],
+  "status": "passed"
+}

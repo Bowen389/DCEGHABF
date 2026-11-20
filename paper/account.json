@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "initial_cash": 200000.0,
+  "cash": 200000.0,
+  "entry_budget": 20000.0,
+  "principal_cost_cap": 200000.0,
+  "max_new_daily": 1,
+  "start_session": "2026-11-23",
+  "last_processed": null,
+  "holdings": [],
+  "trades": [],
+  "decisions": [],
+  "equity": []
+}

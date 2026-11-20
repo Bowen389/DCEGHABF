@@ -1,0 +1,82 @@
+name: DCEGHABF daily close scan
+on:
+  schedule:
+    - cron: '0 9 * * 1-5'
+    - cron: '0 10 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      asof:
+        description: 'Optional market date YYYY-MM-DD; leave empty for Beijing today'
+        required: false
+        default: ''
+  push:
+    branches: [main]
+    paths: ['src/**', 'config/**', 'tests/**', '.github/workflows/**', 'requirements.txt', 'watchdog/**']
+permissions:
+  contents: write
+concurrency:
+  group: dceghabf-main
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Refresh after concurrency queue
+        run: git pull --ff-only origin main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
+      - uses: actions/cache/restore@v4
+        with:
+          path: cache
+          key: dceghabf-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: dceghabf-v1-
+      - name: Settle and scan
+        id: scan
+        env:
+          TZ: Asia/Shanghai
+          OPENBLAS_NUM_THREADS: '1'
+          PYTHONUNBUFFERED: '1'
+          ASOF: ${{ inputs.asof }}
+        run: |
+          if [ -n "$ASOF" ]; then
+            python -m src.scan --if-needed --asof "$ASOF"
+          else
+            python -m src.scan --if-needed
+          fi
+      - name: Persist dated reports and paper account even on source failure
+        if: always() && steps.scan.outcome != '' && steps.scan.outcome != 'skipped'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports paper
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update DCEGHABF dated close candidates and fixed-size paper account'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
+          fi
+      - uses: actions/cache/save@v4
+        if: always() && hashFiles('cache/compact.pkl.gz') != ''
+        with:
+          path: cache
+          key: dceghabf-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Job summary
+        if: always()
+        run: |
+          if [ -f reports/latest.md ]; then cat reports/latest.md >> "$GITHUB_STEP_SUMMARY"; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dceghabf-close-${{ github.run_id }}
+          path: |
+            reports/
+            paper/
+          if-no-files-found: ignore
