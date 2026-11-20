@@ -9,7 +9,7 @@ from .paper import fresh,settle
 from .reporting import markdown
 ROOT=Path(__file__).resolve().parents[1]
 def scan(root=ROOT,asof=None,if_needed=False,raw_override=None):
- root=Path(root);now=datetime.now(ZoneInfo('Asia/Shanghai'));date=asof or now.date().isoformat();models=load_models(root);fingerprint=contract_hash(models)
+ root=Path(root);atomic_json(root/'reports/trading_calendar.json',{'source':'exchange_calendars XSHG','valid_from':'2023-01-03','valid_through':CAL.last_session.strftime('%Y-%m-%d'),'sessions':sessions('2023-01-03',CAL.last_session.strftime('%Y-%m-%d'))});now=datetime.now(ZoneInfo('Asia/Shanghai'));date=asof or now.date().isoformat();models=load_models(root);fingerprint=contract_hash(models)
  if pd.Timestamp(date)>pd.Timestamp(now.date()):raise ValueError('Refuse future asof')
  if date not in sessions(date,date):print(date,'non-trading day, skip');return None
  out=root/'reports'/(date+'.json')
