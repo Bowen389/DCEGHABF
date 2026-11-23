@@ -1,0 +1,837 @@
+{
+  "schema": 1,
+  "strategy": "DCEGHABF",
+  "asof": "2026-11-23",
+  "status": "complete",
+  "generated_at": "2026-11-23T17:46:40+08:00",
+  "contract_sha256": "438e98a7454e5cb2190af4e1f7b1b88c72cd723410f19465d869c3c2f7e59393",
+  "next_session": "2026-11-24",
+  "environment": {
+    "date": "2026-11-23",
+    "all_n": 5572,
+    "main_n": 3187,
+    "breadth": 0.83632447954056,
+    "breadth_main": 0.7527455287103859,
+    "index_close": 3538.948,
+    "ma20": 3628.614475,
+    "regime": "Q3"
+  },
+  "modules": {
+    "E": {
+      "id": "Q3-EXEC-0841",
+      "regime": "Q3",
+      "pool": "rebound",
+      "pool_count": 20,
+      "score_valid": 20,
+      "coverage": 1.0,
+      "qualified_count": 2,
+      "factor_diagnostics": {
+        "量比5": {
+          "valid": 20,
+          "std": 0.40727782171975324
+        },
+        "OBV斜率": {
+          "valid": 20,
+          "std": 0.5236518569611032
+        }
+      },
+      "unscorable_reason": null,
+      "watch_top4": [
+        {
+          "module": "E",
+          "model_id": "Q3-EXEC-0841",
+          "code": "605018",
+          "key": "sh605018",
+          "name": "长华集团",
+          "score": 0.742642360589334,
+          "percentile": 1.0,
+          "passes_score": true,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "E",
+          "model_id": "Q3-EXEC-0841",
+          "code": "603103",
+          "key": "sh603103",
+          "name": "横店影视",
+          "score": 0.621497795796909,
+          "percentile": 0.95,
+          "passes_score": true,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "E",
+          "model_id": "Q3-EXEC-0841",
+          "code": "002343",
+          "key": "sz002343",
+          "name": "慈文传媒",
+          "score": 0.49827067722754004,
+          "percentile": 0.9,
+          "passes_score": false,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "E",
+          "model_id": "Q3-EXEC-0841",
+          "code": "003021",
+          "key": "sz003021",
+          "name": "兆威机电",
+          "score": 0.40970773530517596,
+          "percentile": 0.85,
+          "passes_score": false,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        }
+      ],
+      "candidates": [
+        {
+          "module": "E",
+          "model_id": "Q3-EXEC-0841",
+          "code": "605018",
+          "key": "sh605018",
+          "name": "长华集团",
+          "score": 0.742642360589334,
+          "percentile": 1.0,
+          "passes_score": true,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "E",
+          "model_id": "Q3-EXEC-0841",
+          "code": "603103",
+          "key": "sh603103",
+          "name": "横店影视",
+          "score": 0.621497795796909,
+          "percentile": 0.95,
+          "passes_score": true,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        }
+      ]
+    },
+    "A": {
+      "id": "U-WEXEC-2353",
+      "regime": "U",
+      "pool": "breakout",
+      "pool_count": 40,
+      "score_valid": 40,
+      "coverage": 1.0,
+      "qualified_count": 2,
+      "factor_diagnostics": {
+        "振幅": {
+          "valid": 40,
+          "std": 0.04352475287843245
+        },
+        "VWAP乖离": {
+          "valid": 40,
+          "std": 0.023251530487932073
+        },
+        "逆市强度": {
+          "valid": 40,
+          "std": 0.007747136139703969
+        }
+      },
+      "unscorable_reason": null,
+      "watch_top4": [
+        {
+          "module": "A",
+          "model_id": "U-WEXEC-2353",
+          "code": "000001",
+          "key": "sz000001",
+          "name": "平安银行",
+          "score": 1.6130840572863483,
+          "percentile": 1.0,
+          "passes_score": true,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "A",
+          "model_id": "U-WEXEC-2353",
+          "code": "600987",
+          "key": "sh600987",
+          "name": "航民股份",
+          "score": 1.397722383227252,
+          "percentile": 0.975,
+          "passes_score": true,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "A",
+          "model_id": "U-WEXEC-2353",
+          "code": "600750",
+          "key": "sh600750",
+          "name": "华润江中",
+          "score": 1.2624880152919744,
+          "percentile": 0.95,
+          "passes_score": false,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "A",
+          "model_id": "U-WEXEC-2353",
+          "code": "600177",
+          "key": "sh600177",
+          "name": "雅戈尔",
+          "score": 1.1878579440084414,
+          "percentile": 0.925,
+          "passes_score": false,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        }
+      ],
+      "candidates": [
+        {
+          "module": "A",
+          "model_id": "U-WEXEC-2353",
+          "code": "000001",
+          "key": "sz000001",
+          "name": "平安银行",
+          "score": 1.6130840572863483,
+          "percentile": 1.0,
+          "passes_score": true,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "A",
+          "model_id": "U-WEXEC-2353",
+          "code": "600987",
+          "key": "sh600987",
+          "name": "航民股份",
+          "score": 1.397722383227252,
+          "percentile": 0.975,
+          "passes_score": true,
+          "gap_low": null,
+          "gap_high": null,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        }
+      ]
+    },
+    "B": {
+      "id": "U-EXEC-1399",
+      "regime": "U",
+      "pool": "breakout",
+      "pool_count": 40,
+      "score_valid": 40,
+      "coverage": 1.0,
+      "qualified_count": 8,
+      "factor_diagnostics": {
+        "OBV斜率": {
+          "valid": 40,
+          "std": 0.24844726288641628
+        },
+        "20日波动率": {
+          "valid": 40,
+          "std": 0.014832482392484973
+        },
+        "振幅": {
+          "valid": 40,
+          "std": 0.04352475287843245
+        },
+        "信号日实体占振幅比": {
+          "valid": 40,
+          "std": 0.29840773746542787
+        },
+        "20日相对动量": {
+          "valid": 40,
+          "std": 0.16729344857633582
+        },
+        "5日动量": {
+          "valid": 40,
+          "std": 0.14076829924716422
+        },
+        "估算流通市值": {
+          "valid": 40,
+          "std": 39627877692.88577
+        },
+        "5日累计换手": {
+          "valid": 40,
+          "std": 47.3525777519028
+        },
+        "连板": {
+          "valid": 40,
+          "std": 1.2547410091329605
+        },
+        "信号前5日均额对数": {
+          "valid": 40,
+          "std": 1.1380305919500786
+        },
+        "VWAP乖离": {
+          "valid": 40,
+          "std": 0.023251530487932073
+        },
+        "开盘强度": {
+          "valid": 40,
+          "std": 0.04012889482218596
+        },
+        "量价效率": {
+          "valid": 40,
+          "std": 0.3168794103160518
+        },
+        "信号前20日涨停次数": {
+          "valid": 40,
+          "std": 1.4139925742379271
+        },
+        "收盘位置": {
+          "valid": 40,
+          "std": 0.1390924927360283
+        },
+        "波动压缩": {
+          "valid": 40,
+          "std": 0.3859751859193613
+        },
+        "信号前一日涨跌幅": {
+          "valid": 40,
+          "std": 0.05727073224929394
+        },
+        "突破幅度20": {
+          "valid": 40,
+          "std": 0.03569767529311559
+        },
+        "上影比例": {
+          "valid": 40,
+          "std": 0.12666507940655825
+        },
+        "量比60": {
+          "valid": 40,
+          "std": 2.1798387441855036
+        },
+        "量能加速度": {
+          "valid": 40,
+          "std": 1.7970996766608345
+        },
+        "信号前20日高点距离": {
+          "valid": 40,
+          "std": 0.03795719684272585
+        },
+        "信号前3日动量": {
+          "valid": 40,
+          "std": 0.0964615365508849
+        },
+        "量比5": {
+          "valid": 40,
+          "std": 0.5554093672099298
+        }
+      },
+      "unscorable_reason": null,
+      "watch_top4": [
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "000001",
+          "key": "sz000001",
+          "name": "平安银行",
+          "score": 1.2708148582090268,
+          "percentile": 1.0,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "003038",
+          "key": "sz003038",
+          "name": "鑫铂股份",
+          "score": 0.6416381089158049,
+          "percentile": 0.975,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "002638",
+          "key": "sz002638",
+          "name": "勤上股份",
+          "score": 0.5027009979409488,
+          "percentile": 0.95,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "000823",
+          "key": "sz000823",
+          "name": "超声电子",
+          "score": 0.4423835169878921,
+          "percentile": 0.925,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        }
+      ],
+      "candidates": [
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "000001",
+          "key": "sz000001",
+          "name": "平安银行",
+          "score": 1.2708148582090268,
+          "percentile": 1.0,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "003038",
+          "key": "sz003038",
+          "name": "鑫铂股份",
+          "score": 0.6416381089158049,
+          "percentile": 0.975,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "002638",
+          "key": "sz002638",
+          "name": "勤上股份",
+          "score": 0.5027009979409488,
+          "percentile": 0.95,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "000823",
+          "key": "sz000823",
+          "name": "超声电子",
+          "score": 0.4423835169878921,
+          "percentile": 0.925,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "601689",
+          "key": "sh601689",
+          "name": "拓普集团",
+          "score": 0.4259813809621905,
+          "percentile": 0.9,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "600987",
+          "key": "sh600987",
+          "name": "航民股份",
+          "score": 0.39736470147063985,
+          "percentile": 0.875,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "605599",
+          "key": "sh605599",
+          "name": "菜百股份",
+          "score": 0.3565338495845725,
+          "percentile": 0.85,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "B",
+          "model_id": "U-EXEC-1399",
+          "code": "601916",
+          "key": "sh601916",
+          "name": "浙商银行",
+          "score": 0.33270379306298437,
+          "percentile": 0.825,
+          "passes_score": true,
+          "gap_low": -0.02,
+          "gap_high": -0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        }
+      ]
+    },
+    "F": {
+      "id": "Q3-EXEC-8227",
+      "regime": "Q3",
+      "pool": "rebound",
+      "pool_count": 20,
+      "score_valid": 20,
+      "coverage": 1.0,
+      "qualified_count": 13,
+      "factor_diagnostics": {
+        "量比60": {
+          "valid": 20,
+          "std": 1.3777659689808563
+        },
+        "信号前一日涨跌幅": {
+          "valid": 20,
+          "std": 0.05254658418013496
+        },
+        "信号日实体占振幅比": {
+          "valid": 20,
+          "std": 0.09416919029446365
+        }
+      },
+      "unscorable_reason": null,
+      "watch_top4": [
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "002343",
+          "key": "sz002343",
+          "name": "慈文传媒",
+          "score": 0.9173227869156626,
+          "percentile": 1.0,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "603533",
+          "key": "sh603533",
+          "name": "掌阅科技",
+          "score": 0.8323667473426867,
+          "percentile": 0.95,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "603598",
+          "key": "sh603598",
+          "name": "引力传媒",
+          "score": 0.8024742434958914,
+          "percentile": 0.9,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "001283",
+          "key": "sz001283",
+          "name": "豪鹏科技",
+          "score": 0.7356654957868131,
+          "percentile": 0.85,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        }
+      ],
+      "candidates": [
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "002343",
+          "key": "sz002343",
+          "name": "慈文传媒",
+          "score": 0.9173227869156626,
+          "percentile": 1.0,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "603533",
+          "key": "sh603533",
+          "name": "掌阅科技",
+          "score": 0.8323667473426867,
+          "percentile": 0.95,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "603598",
+          "key": "sh603598",
+          "name": "引力传媒",
+          "score": 0.8024742434958914,
+          "percentile": 0.9,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "001283",
+          "key": "sz001283",
+          "name": "豪鹏科技",
+          "score": 0.7356654957868131,
+          "percentile": 0.85,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "600103",
+          "key": "sh600103",
+          "name": "青山纸业",
+          "score": 0.7117494597672239,
+          "percentile": 0.8,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "002913",
+          "key": "sz002913",
+          "name": "奥士康",
+          "score": 0.7043354437917985,
+          "percentile": 0.75,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "603278",
+          "key": "sh603278",
+          "name": "大业股份",
+          "score": 0.5984132856538049,
+          "percentile": 0.7,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "003021",
+          "key": "sz003021",
+          "name": "兆威机电",
+          "score": 0.4611831076953641,
+          "percentile": 0.65,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "002815",
+          "key": "sz002815",
+          "name": "崇达技术",
+          "score": 0.442144762826881,
+          "percentile": 0.6,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "002623",
+          "key": "sz002623",
+          "name": "亚玛顿",
+          "score": 0.3495764469470444,
+          "percentile": 0.55,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "002724",
+          "key": "sz002724",
+          "name": "海洋王",
+          "score": 0.23666731132833177,
+          "percentile": 0.5,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "002584",
+          "key": "sz002584",
+          "name": "西陇科学",
+          "score": 0.0968146631816352,
+          "percentile": 0.45,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        },
+        {
+          "module": "F",
+          "model_id": "Q3-EXEC-8227",
+          "code": "603103",
+          "key": "sh603103",
+          "name": "横店影视",
+          "score": 0.0076027361090993595,
+          "percentile": 0.4,
+          "passes_score": true,
+          "gap_low": -0.05,
+          "gap_high": 0.01,
+          "hold_after_buy": 1,
+          "opening_filter_status": "待次日开盘确认"
+        }
+      ]
+    }
+  },
+  "errors": [],
+  "source": {
+    "history_start": "2023-01-03",
+    "cache_version": 1,
+    "valid_observations_per_stock_cap": 140,
+    "market_source": {
+      "source": "https://www.tdx.com.cn/products/data/data/g4day/20261123.zip",
+      "source_zip_sha256": "d0aaa7fa9476a2cd49cf9017de963b0fa4ee4f6571e4128287c45d556bc3449e",
+      "rows": 5573
+    },
+    "session_count": 941,
+    "latest_all_n": 5572
+  },
+  "paper": {
+    "start_session": "2026-11-23",
+    "last_processed": "2026-11-23",
+    "cash": 180534.162,
+    "holdings": [
+      {
+        "module": "A",
+        "model_id": "U-WEXEC-2353",
+        "code": "600098",
+        "key": "sh600098",
+        "name": "广州发展",
+        "score": 0.8797178331840312,
+        "percentile": 1.0,
+        "passes_score": true,
+        "gap_low": null,
+        "gap_high": null,
+        "hold_after_buy": 1,
+        "opening_filter_status": "待次日开盘确认",
+        "signal_date": "2026-11-20",
+        "gap": -0.01278409090909094,
+        "buy_date": "2026-11-23",
+        "buy_price": 6.95,
+        "shares": 2800,
+        "cost": 19465.838,
+        "target_exit": "2026-11-24",
+        "last_close": 6.83,
+        "last_quote_date": "2026-11-23"
+      }
+    ]
+  },
+  "sizing": {
+    "initial_cash": 200000,
+    "fixed_entry_budget_including_fee": 20000,
+    "max_simultaneous_entry_cost": 200000,
+    "max_new_daily": 1,
+    "fee_each_side": 0.0003
+  }
+}
