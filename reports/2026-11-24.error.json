@@ -1,0 +1,9 @@
+{
+  "asof": "2026-11-24",
+  "status": "error",
+  "generated_at": "2026-11-24T04:48:58.768356+08:00",
+  "errors": [
+    "Missing exchange-session archives: [{\"date\": \"2026-11-24\", \"error\": \"HTTP Error 404: Not Found\"}]"
+  ],
+  "modules": {}
+}
