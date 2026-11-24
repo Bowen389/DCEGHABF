@@ -1,1 +1,2 @@
-
+module,model_id,code,key,name,score,percentile,passes_score,gap_low,gap_high,hold_after_buy,opening_filter_status,signal_date,gap,buy_date,buy_price,shares,cost,target_exit,last_close,last_quote_date,sell_date,sell_price,proceeds,pnl
+A,U-WEXEC-2353,600098,sh600098,广州发展,0.8797178331840312,1.0,True,,,1,待次日开盘确认,2026-11-20,-0.01278409090909094,2026-11-23,6.95,2800,19465.838,2026-11-24,6.65,2026-11-24,2026-11-24,6.65,18614.414,-851.4239999999991
